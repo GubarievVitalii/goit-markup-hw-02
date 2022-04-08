@@ -1,10 +1,16 @@
 body {
-    font-family: 'roboto', 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Roboto',  Tahoma, sans-serif;
+}
+.list {
+    list-style: none
+}
+.link {
+    text-decoration: none;
 }
 
+/*-------------------------------INDEX----------------------------------*/
 /*-------------------------------HEADER---------------------------------*/
-.header-logo-text {
-    text-decoration: none;
+.header-logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -12,18 +18,23 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+.header-logo:hover, 
+.header-logo:focus {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    background: #ffffff;
+}
 .header-logo-web {
     color: #2196F3;
 }
 .header-logo-studio {
     color: #000000;
 }
-.header-list {
-    list-style: none
-}
 .header-link {
-    text-decoration: none;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -31,29 +42,31 @@ body {
     color: #212121;
 }
 .header-link:hover, 
-.header-link:focus{
+.header-link:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    background: #ffffff;
     color: #2196F3;
 }
 .header-gmail, .header-tel {
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
-.header-gmail:hover, 
-.header-gmail:focus, 
-.header-tel:hover,
-.header-tel:focus {
+.header-gmail:hover, .header-gmail:focus, 
+.header-tel:hover, .header-tel:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    background: #ffffff;
     color: #2196F3;
 }
 /*-------------------------------MAIN---------------------------------*/
-.main-list,
-.work-list,
-.comands-list {
-    list-style: none
-}
 /*---------SECTION-TITLE----------*/
 .main-title {
     background: #2F303A;
@@ -78,8 +91,16 @@ body {
     color: #FFFFFF;
     background: #2196F3;
 }
-.main-title-btn:hover,
+.main-title-btn:hover, 
 .main-title-btn:focus {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
     background: #188CE8;
 }
 /*---------SECTION-ITEMS------------*/
@@ -145,7 +166,7 @@ body {
 .footer {
     background: #2F303A;
 }
-.footer-logo-text {
+.footer-logo {
     text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
@@ -153,6 +174,17 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+.footer-logo:hover,
+.footer-logo:focus {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    background: #2F303A;
 }
 .footer-logo-web {
     color: #2196F3;
@@ -166,21 +198,82 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 .footer-map {
-    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-map:hover,
+.footer-map:focus {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background: #2F303A;
     color: #FFFFFF;
 }
 .footer-gmail, .footer-tel {
-    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-map:hover,
-.footer-map:focus,
 .footer-gmail:hover,
 .footer-gmail:focus,
 .footer-tel:hover,
 .footer-tel:focus {
-    color: #2196F3;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*-------------------------------PORTFOLIO---------------------------------*/
+button {
+    border: none;
+}
+.btn-filter {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+}
+.btn-filter:hover, :focus {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+}
+.filter-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.filter-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
